@@ -1,0 +1,659 @@
+	/*** --------------------------------------------------------------- */
+	/* 		The import fonts
+	/*** --------------------------------------------------------------- */	
+	@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600);
+
+	/*** --------------------------------------------------------------- */
+	/* 		The default style
+	/*** --------------------------------------------------------------- */		
+	
+	#onp-summer-form .clearfix {
+	  *zoom: 1;
+	}
+	#onp-summer-form .clearfix:before,
+	#onp-summer-form .clearfix:after {
+	  display: table;
+	  content: "";
+	  line-height: 0;
+	}
+	#onp-summer-form .clearfix:after {
+	  clear: both;
+	}
+	#onp-summer-form .hide-text {
+	  font: 0/0 a;
+	  color: transparent;
+	  text-shadow: none;
+	  background-color: transparent;
+	  border: 0;
+	}
+	#onp-summer-form .input-block-level {
+	  display: block;
+	  width: 100%;
+	  min-height: 30px;
+	  -webkit-box-sizing: border-box;
+	  -moz-box-sizing: border-box;
+	  box-sizing: border-box;
+	}	
+	#onp-summer-form .onp-tab-content > .onp-tab-pane	{
+	  display: none;
+	}
+	#onp-summer-form .onp-tab-content > .active {
+	  display: block;
+	}
+	
+	::-webkit-input-placeholder { 
+		color: #686867;		
+	}
+
+	:-moz-placeholder { 
+		color: #686867;		
+	}
+
+	:-ms-input-placeholder { 
+		color: #686867;	
+	}
+
+	#onp-summer-form .placeholder { 
+		color: #686867;			
+	}
+	
+	#onp-summer-form {
+		position:relative;
+		width:600px;
+		margin:150px auto;
+		font:13px 'Open Sans', sans-serif;
+		color:#fff;
+	}
+	
+	#onp-summer-form a {
+		text-decoration:none;
+		font:13px 'Open Sans', sans-serif;		
+		color:#fff;
+	}
+	#onp-summer-form a:hover {
+		text-decoration:underline;
+	}
+	
+	/*** --------------------------------------------------------------- */
+	/* 		The tab style
+	/*** --------------------------------------------------------------- */
+	
+	#onp-summer-form  .onp-tab-menu {
+		position:absolute;
+		top:0; left:-50px;
+		padding:0; margin:0;
+	}
+			
+	#onp-summer-form  .onp-tab-menu li {	
+		display:block;
+		list-style:none;
+		margin-bottom:5px;
+		background:#2e2e2e;
+		border-radius: 5px 0 0 5px;
+		-moz-border-radius: 5px 0 0 5px;	
+		-o-border-radius: 5px 0 0 5px;
+		-webkit-border-radius: 5px 0 0 5px;			
+	}	
+	
+	#onp-summer-form  .onp-tab-menu li a {
+		display:inline-block;
+		display: -moz-inline-stack;
+		width:50px;
+		height:50px;	
+		text-indent:-9999999px;
+		opacity:0.2;
+	}	
+	
+	#onp-summer-form .onp-tab-menu li.active {
+		width:70px;	
+		margin-left:-20px;
+	}
+		
+	#onp-summer-form  .onp-tab-menu li.active a {
+		opacity:1;
+	}
+			
+	#onp-summer-form .onp-first-tabmenu a {	
+		background-image:url(../../images/login/lock.png);
+		background-repeat:no-repeat;
+		background-position:20px center;
+	}
+
+	#onp-summer-form .onp-last-tabmenu a {	
+		background-image:url(../../images/login/blank.png);	
+		background-repeat:no-repeat;
+		background-position:20px center;
+	}	
+	
+	#onp-summer-form .onp-tab-content {
+		overflow:visible !important;
+	}
+	
+	#onp-summer-form .onp-forgot-login-area {
+		display:none;
+	}
+	
+	/*** --------------------------------------------------------------- */
+	/* 		The form style
+	/*** --------------------------------------------------------------- */	
+	#onp-summer-form .onp-login-form .onp-form-side  h4,
+	#onp-summer-form .onp-register-form .onp-form-side   h4 {		
+		height:21px;
+		padding-left:25px;
+		margin:20px 0 20px;
+		font-size:15px;
+		color:#fff;
+		font-weight:400;	
+		text-transform:uppercase;
+		line-height:1.9;
+	}
+	#onp-summer-form .onp-login-form .onp-form-side  h4	{
+		background:url(../../images/login/lock.png) left center no-repeat;	
+	}
+	#onp-summer-form .onp-register-form .onp-form-side  h4 {
+		background:url(../../images/login/blank.png) left center no-repeat;	
+	}
+	#onp-summer-form .onp-form-side	{		
+		float:left;
+		width:260px;
+		height:250px;	
+		padding:20px;
+		border-radius: 5px 0 0 5px;
+		-webkit-border-radius: 5px 0 0 5px;
+		-moz-border-radius: 5px 0 0 5px;
+		-o-border-radius: 5px 0 0 5px;	
+		background: #82c435;
+		background: -moz-linear-gradient(top,  #82c435 0%, #4e9c20 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#82c435), color-stop(100%,#4e9c20));
+		background: -webkit-linear-gradient(top,  #82c435 0%,#4e9c20 100%);
+		background: -o-linear-gradient(top,  #82c435 0%,#4e9c20 100%);
+		background: -ms-linear-gradient(top,  #82c435 0%,#4e9c20 100%);
+		background: linear-gradient(to bottom,  #82c435 0%,#4e9c20 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#82c435', endColorstr='#4e9c20',GradientType=0 );	
+		box-shadow:  inset 0px 1px 1px rgba(255,255,255,0.3), 0px 1px 1px rgba(000,000,000,0.3), inset -1px 0px 1px rgba(255,255,255,0.3), 2px 1px 1px rgba(000,000,000,0.1);		
+	}
+				
+	#onp-summer-form .onp-form-meta	{		
+		width:230px;	
+		height:220px;	
+		padding:50px 20px 20px 50px;
+		margin-left:300px;
+		border-radius: 0 5px 5px 0;
+		-webkit-border-radius: 0 5px 5px 0;
+		-moz-border-radius: 0 5px 5px 0;
+		-o-border-radius: 0 5px 5px 0;
+		background: #515a68;
+		background: -moz-linear-gradient(top,  #515a68 0%, #31363e 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#515a68), color-stop(100%,#31363e));
+		background: -webkit-linear-gradient(top,  #515a68 0%,#31363e 100%);
+		background: -o-linear-gradient(top,  #515a68 0%,#31363e 100%);
+		background: -ms-linear-gradient(top,  #515a68 0%,#31363e 100%);
+		background: linear-gradient(to bottom,  #515a68 0%,#31363e 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#515a68', endColorstr='#31363e',GradientType=0 );	
+		box-shadow:  inset 0px 1px 1px rgba(255,255,255,0.3), inset -1px -1px 1px rgba(255,255,255,0.1), 0px 1px 1px rgba(000,000,000,0.3);		
+	}
+		
+	/** The text filed style */
+	
+	#onp-summer-form  input[type="text"], #onp-summer-form  input[type="password"]	{
+		width:100%;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding:8px 10px 8px 8px;
+		font:13px 'Open Sans', sans-serif;
+		background-color:#ddf3ff;
+		color:#444;
+		border:1px solid #6bb32c;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-o-border-radius: 4px;
+		border-radius: 4px;	
+		box-shadow:  inset 0px 1px 1px rgba(0,0,0,0.1), 0 1px 1px rgba(255,255,255,0.5);
+		-o-box-shadow:  inset 0px 1px 1px rgba(0,0,0,0.1), 0 1px 1px rgba(255,255,255,0.5);
+		-webkit-box-shadow:  inset 0px 1px 1px rgba(0,0,0,0.1), 0 1px 1px rgba(255,255,255,0.5);
+		-moz-box-shadow:  inset 0px 1px 1px rgba(0,0,0,0.1), 0 1px 1px rgba(255,255,255,0.5);	
+		outline: none;
+	}
+	#onp-summer-form  input[type="text"]:focus, #onp-summer-form  input[type="password"]:focus {
+		box-shadow: 0px 0px 4px rgba(255,255,255,0.5);
+		background-color:#e8f6ff;
+	}
+	#onp-summer-form .onp-warning-text {
+		display:none;
+		width:150px;
+		position:absolute; top:-10px; left:-180px;
+		background: #d53200;	
+		padding:5px 10px;	
+		color:#fff;	text-align:center;
+		font:13px 'Open Sans', 'Helvetica', 'Tahoma', sans-serif;
+		margin-top:5px;
+		border: 1px solid #f52020;
+		border-radius: 3px; 
+		-moz-border-radius: 3px; 
+		-o-border-radius: 3px; 
+		-webkit-border-radius: 3px; 
+		box-shadow: 0px 0px 15px rgba(245, 32, 32, 0.7);
+		-o-box-shadow:  0px 0px 15px rgba(245, 32, 32, 0.7);
+		-webkit-box-shadow: 0px 0px 15px rgba(245, 32, 32, 0.7);
+		-moz-box-shadow: 0px 0px 15px rgba(245, 32, 32, 0.7);
+		opacity:0;
+	}	
+	
+	#onp-summer-form  .onp-warning-text:after, #onp-summer-form .onp-warning-text:before {
+		left: 100%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+		pointer-events: none;
+	}
+		
+	#onp-summer-form .onp-warning-text:after {
+		border-color: rgba(213, 50, 0, 0);
+		border-left-color: #d53200;
+		border-width: 8px;
+		top: 50%;
+		margin-top: -8px;
+	}	
+	
+	#onp-summer-form  .onp-warning-text:before {
+		border-color: rgba(245, 32, 32, 0);
+		border-left-color: #f52020;
+		border-width: 8px;
+		top: 50%;
+		margin-top: -8px;
+	}
+	
+	#onp-summer-form label {
+		position:relative;
+	}
+	
+		
+	/** Checkbox Style */ 
+	
+	#onp-summer-form .checkbox {	
+		display:block !important;
+		float:left;
+		width: 16px;
+		height: 16px;
+		margin:1px 4px 0 0;
+		background: url(../../images/login/checkbox.png) no-repeat;
+		cursor: pointer;
+	}
+	#onp-summer-form .checkbox:hover {
+		background-position: 0 -32px;
+	}
+	#onp-summer-form .checkbox.checked {
+		background-position: -16px -32px;
+	}
+	
+	/*** --------------------------------------------------------------- */
+	/* 		The buttons style
+	/*** --------------------------------------------------------------- */	
+	
+	/** The buttons form style */
+	
+	#onp-summer-form .onp-process-btn {
+		display: inline-block;	
+		border:0;	
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-o-border-radius: 4px;	
+		font:13px 'Open Sans', sans-serif;
+		font-weight:600;	
+		box-shadow: inset 0px 1px 1px rgba(255,255,255,0.45), inset 0px 5px 15px rgba(226, 167, 2,0.5), 0px 1px 2px rgba(000,000,000,0.2);
+		-o-box-shadow:  inset 0px 1px 1px rgba(255,255,255,0.45), inset 0px 5px 15px rgba(226, 167, 2,0.5), 0px 1px 2px rgba(000,000,000,0.2);
+		-webkit-box-shadow:  inset 0px 1px 1px rgba(255,255,255,0.45), inset 0px 5px 15px rgba(226, 167, 2,0.5), 0px 1px 2px rgba(000,000,000,0.2);
+		-moz-box-shadow:  inset 0px 1px 1px rgba(255,255,255,0.45), inset 0px 5px 15px rgba(226, 167, 2,0.5), 0px 1px 2px rgba(000,000,000,0.2);
+		text-shadow:0 -1px 0 rgba(000, 000, 000, 0.1);		
+		cursor:pointer;		
+		padding: 7px 25px 7px 20px;
+		color:#fff;	
+		line-height:1.8;	
+		background: #fcc949;
+		background: -moz-linear-gradient(top,  #fcc949 22%, #fcb900 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(22%,#fcc949), color-stop(100%,#fcb900));
+		background: -webkit-linear-gradient(top,  #fcc949 22%,#fcb900 100%);
+		background: -o-linear-gradient(top,  #fcc949 22%,#fcb900 100%);
+		background: -ms-linear-gradient(top,  #fcc949 22%,#fcb900 100%);
+		background: linear-gradient(to bottom,  #fcc949 22%,#fcb900 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcc949', endColorstr='#fcb900',GradientType=0 );
+	}
+	
+	#onp-summer-form .onp-process-btn:hover {
+		box-shadow: inset 0px 1px 1px rgba(255,255,255,0.6), inset 0px 5px 30px rgba(226, 167, 2,0.7), 0px 1px 2px rgba(000,000,000,0.2);
+		-o-box-shadow:  inset 0px 1px 1px rgba(255,255,255,0.6), inset 0px 5px 30px rgba(226, 167, 2,0.7), 0px 1px 2px rgba(000,000,000,0.2);
+		-webkit-box-shadow:  inset 0px 1px 1px rgba(255,255,255,0.6), inset 0px 5px 30px rgba(226, 167, 2,0.7), 0px 1px 2px rgba(000,000,000,0.2);
+		-moz-box-shadow:  inset 0px 1px 1px rgba(255,255,255,0.6), inset 0px 5px 30px rgba(226, 167, 2,0.7), 0px 1px 2px rgba(000,000,000,0.2);
+	}
+	
+	#onp-summer-form .onp-process-btn:active {
+	   opacity:0.9; 
+	   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.6), 0 1px 2px rgba(0, 0, 0, 0.15);
+	   -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.6), 0 1px 2px rgba(0, 0, 0, 0.15);
+	   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.6), 0 1px 2px rgba(0, 0, 0, 0.15);
+	   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.6), 0 1px 2px rgba(0, 0, 0, 0.15);
+	}
+	/** The social buttons form style */
+	
+	#onp-summer-form .onp-button {
+		display: inline-block;
+		border:0;
+		margin-bottom:10px;
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		-o-border-radius: 4px;		
+		font-family: 'Open Sans';
+		font-size:13px;
+		font-weight:600;		
+		box-shadow: inset 0px 1px 1px rgba(255,255,255,0.45), 0px 1px 2px rgba(000,000,000,0.2);	
+		-o-box-shadow:  inset 0px 1px 1px rgba(255,255,255,0.45), 0px 1px 2px rgba(000,000,000,0.2);	
+		-webkit-box-shadow:  inset 0px 1px 1px rgba(255,255,255,0.45), 0px 1px 2px rgba(000,000,000,0.2);	
+		-moz-box-shadow:  inset 0px 1px 1px rgba(255,255,255,0.45), 0px 1px 2px rgba(000,000,000,0.2);			
+		transition: opacity 0.7s ease;
+		-webkit-transition:opacity 0.7s ease;
+		-o-transition: opacity 0.7s ease;
+		-moz-transition: opacity 0.7s ease;		
+		cursor:pointer;	
+	}	
+
+
+	/* The styles for the orange button */
+	
+	#onp-summer-form .onp-button.orange {
+		padding: 7px 25px 7px 20px;
+		color:#d0cdcd;	
+		line-height:2;
+		opacity:0.4;
+		
+		background: #505967;
+		background: -moz-linear-gradient(top,  #505967 0%, #32373f 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#505967), color-stop(100%,#32373f));
+		background: -webkit-linear-gradient(top,  #505967 0%,#32373f 100%);
+		background: -o-linear-gradient(top,  #505967 0%,#32373f 100%);
+		background: -ms-linear-gradient(top,  #505967 0%,#32373f 100%);
+		background: linear-gradient(to bottom,  #505967 0%,#32373f 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#505967', endColorstr='#32373f',GradientType=0 );
+
+	}
+
+	#onp-summer-form .onp-button.orange:hover {
+		opacity:1;
+		background: #DCA641;	
+		background: -moz-linear-gradient(top,  #dca641 27%, #ba6814 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(27%,#dca641), color-stop(100%,#ba6814));
+		background: -webkit-linear-gradient(top,  #dca641 27%,#ba6814 100%);
+		background: -o-linear-gradient(top,  #dca641 27%,#ba6814 100%);
+		background: -ms-linear-gradient(top,  #dca641 27%,#ba6814 100%);
+		background: linear-gradient(to bottom,  #dca641 27%,#ba6814 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dca641', endColorstr='#ba6814',GradientType=0 );
+	}
+
+	#onp-summer-form .onp-button.orange:active {
+	   opacity:0.9; 
+	   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.6), 0 1px 2px rgba(0, 0, 0, 0.15);
+	   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.6), 0 1px 2px rgba(0, 0, 0, 0.15);
+	   -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.6), 0 1px 2px rgba(0, 0, 0, 0.15);
+	   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.6), 0 1px 2px rgba(0, 0, 0, 0.15);
+	}
+
+	/* The styles for the orange button */
+	
+	#onp-summer-form .onp-button.blue {
+		padding: 7px 22px 7px 20px;
+		color:#d0cdcd;	
+		line-height:2;
+		opacity:0.4;
+		
+		background: #505967;
+		background: -moz-linear-gradient(top,  #505967 0%, #32373f 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#505967), color-stop(100%,#32373f));
+		background: -webkit-linear-gradient(top,  #505967 0%,#32373f 100%);
+		background: -o-linear-gradient(top,  #505967 0%,#32373f 100%);
+		background: -ms-linear-gradient(top,  #505967 0%,#32373f 100%);
+		background: linear-gradient(to bottom,  #505967 0%,#32373f 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#505967', endColorstr='#32373f',GradientType=0 );
+	}
+
+	#onp-summer-form .onp-button.blue:hover	{
+		opacity:1;
+		background: #3896e0;
+		background: -moz-linear-gradient(top,  #3896e0 23%, #125ec5 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(23%,#3896e0), color-stop(100%,#125ec5));
+		background: -webkit-linear-gradient(top,  #3896e0 23%,#125ec5 100%);
+		background: -o-linear-gradient(top,  #3896e0 23%,#125ec5 100%);
+		background: -ms-linear-gradient(top,  #3896e0 23%,#125ec5 100%);
+		background: linear-gradient(to bottom,  #3896e0 23%,#125ec5 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3896e0', endColorstr='#125ec5',GradientType=0 );
+
+	}
+
+	#onp-summer-form .onp-button.blue:active {
+	   opacity:0.9; 
+	   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.6), 0 1px 2px rgba(0, 0, 0, 0.15);
+	   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.6), 0 1px 2px rgba(0, 0, 0, 0.15);
+	   -o-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.6), 0 1px 2px rgba(0, 0, 0, 0.15);
+	   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.6), 0 1px 2px rgba(0, 0, 0, 0.15);
+	}	
+	
+	/* The styles for the black button */
+	
+	#onp-summer-form .onp-button.black {
+		padding: 7px 38px 7px 20px;
+		color:#d0cdcd;
+		line-height:1.9;
+		opacity:0.4;
+		
+		background: #505967;
+		background: -moz-linear-gradient(top,  #505967 0%, #32373f 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#505967), color-stop(100%,#32373f));
+		background: -webkit-linear-gradient(top,  #505967 0%,#32373f 100%);
+		background: -o-linear-gradient(top,  #505967 0%,#32373f 100%);
+		background: -ms-linear-gradient(top,  #505967 0%,#32373f 100%);
+		background: linear-gradient(to bottom,  #505967 0%,#32373f 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#505967', endColorstr='#32373f',GradientType=0 );
+	}
+
+	#onp-summer-form .onp-button.black:hover {
+		opacity:1;
+		background: #606060;
+		background: -moz-linear-gradient(top,  #606060 17%, #3f3f3f 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(17%,#606060), color-stop(100%,#3f3f3f));
+		background: -webkit-linear-gradient(top,  #606060 17%,#3f3f3f 100%);
+		background: -o-linear-gradient(top,  #606060 17%,#3f3f3f 100%);
+		background: -ms-linear-gradient(top,  #606060 17%,#3f3f3f 100%);
+		background: linear-gradient(to bottom,  #606060 17%,#3f3f3f 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606060', endColorstr='#3f3f3f',GradientType=0 );
+	}
+
+	#onp-summer-form .onp-button.black:active {
+	   opacity:0.9; 
+	   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.6), 0 1px 2px rgba(0, 0, 0, 0.15);
+	   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.6), 0 1px 2px rgba(0, 0, 0, 0.15);
+	   -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.6), 0 1px 2px rgba(0, 0, 0, 0.15);
+	   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.6), 0 1px 2px rgba(0, 0, 0, 0.15);
+	}
+
+	/* The styles for the aquamarine button */
+	
+	#onp-summer-form .onp-button.aquamarine	{
+		padding: 5px 35px 5px 20px;
+		color:#f7f7f7;	
+		line-height:2.2;
+		opacity:0.4;
+		
+		background: #505967;
+		background: -moz-linear-gradient(top,  #505967 0%, #32373f 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#505967), color-stop(100%,#32373f));
+		background: -webkit-linear-gradient(top,  #505967 0%,#32373f 100%);
+		background: -o-linear-gradient(top,  #505967 0%,#32373f 100%);
+		background: -ms-linear-gradient(top,  #505967 0%,#32373f 100%); 
+		background: linear-gradient(to bottom,  #505967 0%,#32373f 100%); 
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#505967', endColorstr='#32373f',GradientType=0 );	
+	}
+
+	#onp-summer-form .onp-button.aquamarine:hover {
+		opacity:1;
+		background: #62ccf2;
+		background: -moz-linear-gradient(top,  #62ccf2 13%, #1689af 100%, #2791b5 100%);
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(13%,#62ccf2), color-stop(100%,#1689af), color-stop(100%,#2791b5));
+		background: -webkit-linear-gradient(top,  #62ccf2 13%,#1689af 100%,#2791b5 100%);
+		background: -o-linear-gradient(top,  #62ccf2 13%,#1689af 100%,#2791b5 100%);
+		background: -ms-linear-gradient(top,  #62ccf2 13%,#1689af 100%,#2791b5 100%);
+		background: linear-gradient(to bottom,  #62ccf2 13%,#1689af 100%,#2791b5 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#62ccf2', endColorstr='#2791b5',GradientType=0 );
+
+	}
+
+	#onp-summer-form .onp-button.aquamarine:active {	
+	   opacity:0.9; 
+	   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.6), 0 1px 2px rgba(0, 0, 0, 0.15);
+	   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.6), 0 1px 2px rgba(0, 0, 0, 0.15);
+	   -o-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.6), 0 1px 2px rgba(0, 0, 0, 0.15);
+	   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.6), 0 1px 2px rgba(0, 0, 0, 0.15);
+	}
+
+	#onp-summer-form  i.icon	{
+		display:block;	
+		width:24px; height:24px;
+		float:left;
+		background-repeat:no-repeat;
+		margin-right:10px;	
+	}
+
+	#onp-summer-form .icon.linkedin { 	
+		background-image: url("../../images/login/linkedin-light-grey.png");
+		background-position: center center;
+	} 
+	
+	#onp-summer-form .icon.facebook	{ 
+		background-image: url("../../images/login/facebook-light-grey.png"); 
+		background-position: center center;
+	}
+	
+	#onp-summer-form .icon.google {   
+		background-image: url("../../images/login/../images/google-light-grey.png");
+		background-position: center center;	
+	} 
+	
+	#onp-summer-form .icon.twitter { 
+		margin-top:2px;
+		background-image: url("../../images/login/twitter-light-grey.png");
+		background-position: center center;	
+	}
+		
+	/*** --------------------------------------------------------------- */
+	/* 		The responsive style > 750px 
+	/*** --------------------------------------------------------------- */
+	
+	@media screen and (max-width: 750px) {		
+		#onp-summer-form {
+			width:300px
+		}
+		/** The tab style */
+		
+		#onp-summer-form  .onp-tab-menu {		
+			top:-50px; left:0;
+			padding:0; margin:0;
+		}
+		
+		#onp-summer-form  .onp-tab-menu li {	
+			display:block;
+			float:left;
+			list-style:none;
+			margin-right:5px;
+			background:rgba(000,000,000,0.4);
+			border-radius: 5px 5px 0 0;			
+		}
+		
+		#onp-summer-form  .onp-tab-menu li a {
+			display:inline-block;
+			width:50px;
+			height:50px;	
+			text-indent:-9999999px;
+			opacity:0.6;
+		}
+		
+		#onp-summer-form .onp-tab-menu li.active {
+			width:50px;
+			height:70px;	
+			margin:-20px 5px 0 0;
+		}
+		
+		#onp-summer-form .onp-tab-menu li.active a {
+			opacity:1;
+		}
+		
+		#onp-summer-form .onp-first-tabmenu a {
+			background-position:center 20px !important;
+		}
+
+		#onp-summer-form .onp-last-tabmenu a {	
+			background-position:center 20px !important;
+		}
+		
+		/** The form style */
+		
+		#onp-summer-form .onp-warning-text {
+			width:30px; right:-5px; left:auto;
+			text-indent:-9999px;
+			padding:5px;
+			margin-top:-40px;
+			border: 0px;		
+			background-image: url('../../images/login/135817043error-alt.png');
+			background-position: center, center;
+			background-repeat:no-repeat;
+			cursor:pointer;
+		}	
+		
+
+		#onp-summer-form  .onp-warning-text:after {		
+			border-width: 15px;
+			top: 50%; left:0;
+			margin-top: -2px !important;
+		}
+		#onp-summer-form  .onp-warning-text:before {		
+			border-width: 15px;
+			top: 50%; left:0;
+			margin-top: -2px !important;
+		}
+
+		#onp-summer-form .onp-form-side {
+			float:none;		
+			border-radius: 5px 5px 0 0 !important;
+			-webkit-border-radius: 5px 5px 0 0 !important;
+			-moz-border-radius: 5px 5px 0 0 !important;
+			-o-border-radius: 5px 5px 0 0 !important;	
+		}
+		#onp-summer-form .onp-form-meta {
+			width:auto;
+			height:40px;
+			text-align:center;
+			margin:0; padding:10px 0 20px;
+			border-radius: 0 0 5px 5px !important;
+			-webkit-border-radius: 0 0 5px 5px !important;
+			-moz-border-radius: 0 0 5px 5px !important;
+			-o-border-radius: 0 0 5px 5px !important;
+		}
+		
+		/** The buttons form style */
+		
+		#onp-summer-form .onp-button {	
+			font-size:0px;
+			padding: 7px 7px !important;
+			text-align:center;
+		}		
+
+		#onp-summer-form .icon {
+			display:inline-block;
+			width:24px; height:24px;
+			margin:0 !important;	
+		}
+		
+		#onp-summer-form .icon.linkedin { background-position: center center; } 
+		#onp-summer-form .icon.facebook { background-position: center center; }
+		#onp-summer-form .icon.google{ background-position: center center; } 
+		#onp-summer-form .icon.twitter{ background-position: center center; }	
+}		
+		

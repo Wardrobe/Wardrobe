@@ -1,0 +1,180 @@
+
+
+*:focus {
+	border: none;
+	outline: none;
+}
+
+.content {
+	padding: 25px 25px 25px 250px;
+}
+
+.logo {
+	display: block;
+	text-indent: -9999px;
+	text-transform: capitalize;
+	background: url(../../images/menu_vertical/logo.png) no-repeat;
+	height: 90px;
+}
+
+.sidebar {
+	height: 100%;
+	min-height: 100%;
+	width: 213px;
+	background: url(../../images/menu_vertical/sidebarBg.png);
+	box-shadow: 0 0 8px #999;
+	float: left;
+	position: inherit;
+	top: 0;
+}
+
+/**  MENU  **/
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul li {
+	background: url(../../images/menu_vertical/listBg.png) bottom no-repeat;
+	text-indent: 50px;
+}
+
+ul li a {
+	color: white;
+	display: block;
+	text-decoration: none;
+	padding: 21px;
+	width: 170px;
+	text-shadow: 1px 1px 0 #191b20;
+	position:relative;
+}
+
+ul li:hover {
+	background: url(../../images/menu_vertical/listBgPink.png) center no-repeat;
+	
+}
+
+ul li a:hover, ul li:hover a {
+	color: white;
+	text-shadow: 1px 1px 0 #913763;
+}
+
+ul li a.dashboard {
+	background: url(../../images/menu_vertical/iconDashboard.png) 25px 50% no-repeat;
+	color: white;
+}
+
+ul li a.pages {
+	background: url(../../images/menu_vertical/iconPages.png) 25px 50% no-repeat;
+    color: white;
+}
+
+ul li a.media {
+	background: url(../../images/menu_vertical/iconMedia.png) 25px 50% no-repeat;
+    color: white;
+}
+
+ul li a.history {
+	background: url(../../images/menu_vertical/iconHistory.png) 25px 50% no-repeat;
+    color: white;
+}
+
+ul li a.messages {
+	background: url(../../images/menu_vertical/iconMessages.png) 25px 50% no-repeat;
+    color: white;
+}
+
+ul li a.settings {
+	background: url(../../images/menu_vertical/iconSettings.png) 25px 50% no-repeat;
+    color: white;
+}
+
+/**  SUB MENU  **/
+
+ul li ul.submenu {
+	display: none;
+	z-index: 500;
+	top: 0;
+}
+
+ul li ul.submenu li {
+	background: url(../../images/menu_vertical/subMenuBg.png) bottom no-repeat;
+}
+
+ul li ul.submenu li a {
+	background: none;
+	padding: 13px;
+	width: 189px;
+}
+
+ul li ul.submenu li.last {
+	border-bottom: 1px solid #54575b;
+	background: url(../../images/menu_vertical/subMenuBg.png) top no-repeat;
+}
+
+ul li ul.submenu li.last a {
+	padding: 12px;
+}
+
+ul li:hover ul.submenu li a {
+	text-shadow: 1px 1px 0 black;
+}
+
+ul li ul.submenu li:hover {
+	background: url(../../images/menu_vertical/subMenuBgHover.png) bottom no-repeat;
+}
+
+/**  PIPS  **/
+
+.pip {
+	display: block;
+	background: url(../../images/menu_vertical/pipBg.png);
+	padding: 3px 12px;
+	position: absolute;
+	top: 20px;
+	right: 25px;
+	color: white;
+	text-align: center;
+	text-indent: 0;
+	font-size: 10px;
+	border-top: 1px solid #1c1f23;
+	border-bottom: 1px solid #4c4f56;
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+}
+
+ul li:hover .pip {
+	background: url(../../images/menu_vertical/pipBgHover.png);
+	border-top: 1px solid #913763;
+	border-bottom: 1px solid #f582b9;
+
+}
+
+/**  SEARCH  **/
+
+.search {
+	background: url(../../images/menu_vertical/listBg.png) no-repeat;
+	padding: 18px 15px;
+	width: 185px;
+	height: 29px;
+}
+
+.search input {
+	width: 125px;
+	padding: 7px 7px 7px 35px;
+	border:none;
+	margin: 0 0 0 10px;
+	background: #fff url(../../images/menu_vertical/search.png) 10px 50% no-repeat;
+	color: #808080;
+	
+	box-shadow: inset 0 0 5px #ccc;
+	-webkit-box-shadow: inset 0 0 5px #ccc;
+	-moz-box-shadow: inset 0 0 5px #ccc;
+	
+	border-radius: 30px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+}

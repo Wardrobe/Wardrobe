@@ -1,0 +1,494 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+:::::::::::::::::::  ESTRUCTURA GENERAL :::::::::::::::::::
+*/
+#body {
+
+}
+#wrapperInit {
+	margin: 0 auto;
+	width: 1100px;
+	height:1200px;
+	background-image:url(../images/bg.jpg);
+	font-family: 'Carrois Gothic', sans-serif;
+	font-size: 12px;
+	color:#2f3439;
+}
+#container {
+	float: left;
+	margin: 0 -240px 0 0;
+	width: 100%;
+}
+
+#container2 {
+	float: left;
+	margin: 0 -240px 0 0;
+	width: 100%;
+	height: 1045px;
+}
+
+
+/*
+:::::::::::::::::::  HEADER  :::::::::::::::::::
+*/
+
+#header {
+	width:1100px;
+	background-image:url(../images/header.jpg);
+	height: 155px;	
+}
+
+#logo {
+	width:262px;
+	height: 87px;
+	margin: 20px 0 0 20px;
+	border:1px solid green;	
+	float:left;
+}
+
+#contenedor-registro {
+	width: 420px;
+	height: 120px;
+	border:1px solid green;
+	float: right;
+	margin-top:5px;
+}
+#login {
+	width: 380px;
+	height: 30px;
+	border:1px solid green;
+	float: right;
+}
+#registro {
+	width:320px;
+	height: 35px;
+	float: right;
+	margin-top:5px;
+	border:1px solid orange
+}
+#no-registrado {
+	width: 150px;
+	height: 30px;
+	float: right;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	background-color:#2f3439
+}
+#registrate {
+	width: 150px;
+	height: 30px;
+	float: right;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin-right:8px;
+	background-color:#2f3439
+}
+#btn-ingresar{
+	width: 20px;
+	height: 20px;
+	float: right;
+	
+}
+#login-facebook {
+	width: 250px;
+	height: 30px;
+	border:1px solid green;
+	float: right;
+	margin-top:5px;
+}
+#separador-header {
+	width: 372px;
+	background-image:url(../images/separador-header.png);
+	height:5px;
+	float: right;
+}
+/*
+:::::::::::::::::::  MENU  :::::::::::::::::::
+*/
+
+#menu {
+	width: 1080;
+	height: 27px;
+	background-image:url(../images/menu.jpg);
+	font-family: 'Carrois Gothic', sans-serif;
+	padding-top:8px;
+	margin-left:20px;
+	
+}
+
+/*
+:::::::::::::::::::  VITRINA HOME  :::::::::::::::::::
+*/
+
+#contenedor-vitrina {
+	width: 100%;
+	height: 453px;
+	background:#FFF;
+	border:1px solid red;
+	padding-top:15px;
+}
+#vitrina {
+	width: 100%;
+	height: 433px;
+	background:#000;
+	border:1px solid green;
+}
+#texto-vitrina {
+	width: 39%;
+	height:173px;
+	float:left;
+	background:#333;
+	margin-top: 260px;
+}
+
+/*
+:::::::::::::::::::   ULTIMOS INSCRITOS HOME  :::::::::::::::::::
+*/
+
+#contenedor-modulos-home {
+	width: 100%;
+	height: 536px;
+	text-align:center;
+}
+#titulo-contenedor-home {
+	width: 100%;
+	height: 40px;
+	text-align:center;
+	border:1px solid green
+}
+#modulos-home {
+	width:265px;
+	height:418px;
+	background-color:#FFF;
+	margin-right:10px;
+	float:left;
+}
+#foto-modulos-home {
+	width:100%;
+	height:150px;
+	background-color:#f1f1f1;
+	float:left;
+}
+#categoria-modulos-home {
+	width:150px;
+	height:10px;
+	text-align:center;
+	background-color:#000;
+	margin:170px 20px 20px 55px;
+	font-size:10px;
+	color:#FFF;
+	padding:8px 0 8px 0;
+}
+#texto-modulos-home {
+	width:80%;
+	height:150px;
+	margin:0 0 10px 10px;
+	background-color:#FFF;
+	float:left;
+	margin-left:25px;
+	font-family: 'Carrois Gothic', sans-serif;
+	font-size:12px;
+	line-height:18px;
+	color:#4f4f4f
+}
+#btn-modulos-home {
+	width:23px;
+	height:23px;
+	float:left;
+	margin-left:115px;
+}
+
+#btn-vermas{
+	width: 119px;
+	background-image:url(../images/btn-vermas.png);
+	height:24px;
+	margin-top: 30px;
+	float: left;
+	margin-left: 500px;
+	padding-top: 8px;
+}
+#btn-vermas a:link{
+	color:#fff
+}
+#btn-vermas a:hover{
+	color:#000
+}
+
+/*
+:::::::::::::::::::  INTERIOR WARDROBE PARA DISEÑADOR  :::::::::::::::::::
+*/
+
+#contenedor-wardrobe-disenador{
+	width:1100PX;
+	height:520px;
+	float:left;
+	background-color: white;
+}
+#contenedor-biografia-disenador{
+	width:236px;
+	height:373px;
+	float:left;
+	background-color:#e8e8e8;
+	margin: 30px 20px 0 0;
+	padding: 20px 20px;
+}
+#logo-biografia-disenador{
+	width:200px;
+	height:80px;
+	float: left;
+}
+#datos-biografia-disenador{
+	width:200px;
+	height:60px;
+	float: left;
+	margin-bottom: 10px;
+}
+#resena-biografia-disenador{
+	width:200px;
+	height:98px;
+	float: left;
+	margin-bottom: 10px;
+}
+#contenedor-galeria-disenador{
+	width:790px;
+	height:413px;
+	float: right;
+	background-color:#e8e8e8;
+	margin-top: 29px;
+}
+
+#btn-wardrobe-disenador{
+	width:140px;
+	height:53px;
+	margin-left: 30%;
+	margin-top: 480px;
+	z-index: 999999; 
+	background-image: url(../images/btn-wardrobe-disenador.png);
+	color:#fff;
+	padding: 15px;
+	font-size: 20px;
+	text-align: center;
+	position: inherit;
+}
+#contenedor-galerias-disenador{
+	width:1100px;
+	height:500px;
+	float: left;
+	margin-top: 43px;
+}
+#galerias-disenador-individual{
+	width:240px;
+	height:230px;
+	float:left;
+	background-color: #ffffff;
+	margin-right: 10px;
+	
+}
+#categoria-galeria-disenador-individual{
+	width:150px;
+	height:10px;
+	text-align:center;
+	background-color:#000;
+	font-size:10px;
+	color:#FFF;
+	padding:8px 0 8px 0;
+}
+
+#redes-galeria-disenador-individual{
+	width:150px;
+	height:10px;
+	text-align:center;
+	background-color:#000;
+	font-size:10px;
+	margin-top: 178px;
+	float: right;
+	color:#FFF;
+	padding:8px 0 8px 0;
+}
+#contenedor-nav{
+	width:1100px;
+	height:25px;
+	float:left;
+}
+
+#previo{
+	width:28px;
+	height:14px;
+	float:left;
+}
+#siguiente{
+	width:28px;
+	height:14px;
+	float:right;
+}
+
+
+#suscribete{
+	width:455px;
+	height:26px;
+	float: inherit;
+	margin-left: 25%;
+	background-color: #f62052;
+	padding: 8px 15px 8px 30px ;
+}
+
+
+/*
+:::::::::::::::::::    PIE DE PAGINA  :::::::::::::::::::
+*/
+#footer {
+	width: 100%;
+	background-color:#5d676f;
+	height:150px;
+	padding-top:30px
+}
+#footer a:link{
+	color:#CCC
+}
+#footer a:hover{
+	color:#000
+}
+#logo-footer {
+	width: 252px;
+	background-color:#5d676f;
+	height:100px;
+	float:left;
+	margin:0 0 0 20px;
+}
+
+#redes-footer {
+	width: 180px;
+	background-color:#5d676f;
+	height:100px;
+	float:left;
+	padding-left: 20px;
+}
+
+#sobre-empresa-footer {
+	width:200px;
+	background-color:#5d676f;
+	height:100px;
+	padding-left: 10px;
+	float:left;
+}
+
+#info-footer {
+	width: 200px;
+	background-color:#5d676f;
+	height:100px;
+	float:left;
+}
+#separador-footer {
+	width: 8px;
+	background-image:url(../images/sep.png);
+	height:100%;
+	float:left;
+	margin: 0 10px 0 10px;
+}
+#titulo-redesfooter {
+	margin-left: 30px;
+	margin-bottom: 20px;
+	width:81px;
+	height:32px;
+}
+
+/*
+::::::::::::::::::::::  TIPOGRAFIAS Y PARRAFOS   :::::::::::::::::::
+*/
+
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: normal;
+	font-size: 18px
+}
+h2 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: normimages/sep.png);
+	height:100%;
+	float:left;
+	margin: 0 10px 0 10px;
+}
+#titulo-redesfooter {
+	margin-left: 30px;
+	margin-bottom: 20px;
+	width:81px;
+	height:32px;
+}
+
+/*
+::::::::::::::::::::::  TIPOGRAFIAS Y PARRAFOS   :::::::::::::::::::
+*/
+
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: normal;
+	font-size: 18px
+}
+h2 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: normal;
+}
+h3 {
+	font-family: 'Carrois Gothic', sans-serif;
+	font-size: 13px;
+	color:#989fa4;
+	font-weight: normal;
+	
+}
+h4 {
+	font-family: 'Carrois Gothic', sans-serif;
+	font-size: 11px;
+	line-height: normal;
+	color:#ffffff
+}
+p {
+        line-height: 18px;
+        
+	
+}
+li {
+list-style: none
+	
+}
+ul {
+	
+}
+a:link{
+	color:#f62052
+}
+
+a:visited{
+	color:#000
+}
+
+a:hover {
+	color:#333
+
+}
+
+
+ul {
+	
+}
+a:link{
+	color:#f62052
+}
+
+a:visited{
+	color:#000
+}
+
+a:hover {
+	color:#333
+
+}
+
+
+
+

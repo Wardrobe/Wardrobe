@@ -1,0 +1,143 @@
+	/*** --------------------------------------------------------------- */
+	/* 		The tab style
+	/*** --------------------------------------------------------------- */
+	
+	#onp-summer-form a {
+		outline: none;
+	}
+	#onp-summer-form  .tab-menu li a {
+		filter:progid:DXImageTransform.Microsoft.Alpha(opacity=20);		
+		zoom: 1;
+        *display: inline;		
+	}
+			
+	#onp-summer-form  .tab-menu li.active a {
+		filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);	
+	}
+		
+	
+	/*** --------------------------------------------------------------- */
+	/* 		The form style
+	/*** --------------------------------------------------------------- */
+	#onp-summer-form .onp-form-side	{	
+	
+	}
+	
+	/** The text filed style */
+	
+	#onp-summer-form  input[type="text"], #onp-summer-form  input[type="password"]	{
+		outline: none;
+	}
+	
+	#onp-summer-form .onp-warning-text {				
+		zoom: 1;
+		filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);			
+	}	
+		
+	/*** --------------------------------------------------------------- */
+	/* 		The buttons style
+	/*** --------------------------------------------------------------- */	
+	
+	/** The buttons form style */
+	
+	#onp-summer-form .onp-process-btn {		
+		zoom: 1;
+        *display: inline;
+		font-weight:lighter;
+		outline: none;	
+	}
+		
+	#onp-summer-form .onp-process-btn:active {
+	   filter:progid:DXImageTransform.Microsoft.Alpha(opacity=90);
+	}
+	/** The social buttons form style */
+	
+	#onp-summer-form .onp-button {
+		zoom: 1;
+        *display: inline;
+		font-weight:lighter;
+		outline: none;	
+	}	
+
+
+	/* The styles for the orange button */
+	
+	#onp-summer-form .onp-button.orange {		
+		filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);
+	}
+
+	#onp-summer-form .onp-button.orange:hover {
+		filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);		
+	}
+
+	#onp-summer-form .onp-button.orange:active {
+	   filter:progid:DXImageTransform.Microsoft.Alpha(opacity=90);	   
+	}
+
+	/* The styles for the orange button */
+	
+	#onp-summer-form .onp-button.blue {	
+		filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);
+	}
+
+	#onp-summer-form .onp-button.blue:hover	{
+		filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+	}
+
+	#onp-summer-form .onp-button.blue:active {
+	   filter:progid:DXImageTransform.Microsoft.Alpha(opacity=90);	   
+	}	
+	
+	/* The styles for the black button */
+	
+	#onp-summer-form .onp-button.black {	
+		filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);		
+	}
+
+	#onp-summer-form .onp-button.black:hover {
+		filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);		
+	}
+
+	#onp-summer-form .onp-button.black:active {
+	   filter:progid:DXImageTransform.Microsoft.Alpha(opacity=90);	 
+	}
+
+	/* The styles for the aquamarine button */
+	
+	#onp-summer-form .onp-button.aquamarine	{
+		padding: 5px 38px 5px 20px;
+		filter:progid:DXImageTransform.Microsoft.Alpha(opacity=40);
+	}
+
+	#onp-summer-form .onp-button.aquamarine:hover {
+		filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+	}
+
+	#onp-summer-form .onp-button.aquamarine:active {	
+	   filter:progid:DXImageTransform.Microsoft.Alpha(opacity=90);
+	}
+
+		
+	/*** --------------------------------------------------------------- */
+	/* 		The responsive style > 750px 
+	/*** --------------------------------------------------------------- */
+	
+	@media screen and (max-width: 750px) {		
+			
+		#onp-summer-form  .tab-menu li a {			
+			zoom: 1;
+			*display: inline;			
+			filter:progid:DXImageTransform.Microsoft.Alpha(opacity=60);
+		}
+			
+		#onp-summer-form .tab-menu li.active a {
+			 filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+		}		
+		
+		/** The buttons form style */	
+		#onp-summer-form .icon {
+			display:inline-block;
+			zoom: 1;
+			*display: inline;				
+		}
+}

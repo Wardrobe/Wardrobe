@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Wardrobe" Class="WardrobeDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=(local);Initial Catalog=Wardrobe;Integrated Security=True;MultipleActiveResultSets=True;Application Name=EntityFramework" SettingsObjectName="Wardrobe.Dao.Properties.Settings" SettingsPropertyName="WardrobeConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Codigo" Member="Codigo">
+    <Type Name="Codigo">
+      <Column Name="ID_CODIGO" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CODIGO" Member="CODIGO1" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FECHA_EXPIRACION" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ID_ESTADO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_TIENDA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Estado_Codigo" Member="Estado" ThisKey="ID_ESTADO" OtherKey="ID_ESTADO" Type="Estado" IsForeignKey="true" />
+      <Association Name="Tienda_Codigo" Member="Tienda" ThisKey="ID_TIENDA" OtherKey="ID_TIENDA" Type="Tienda" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Usuario" Member="Usuario">
+    <Type Name="Usuario">
+      <Column Name="ID_USUARIO" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="APELLIDO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TELEFONO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="USUARIO" Member="USUARIO1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PASSWORD" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ID_TIENDA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_ESTADO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Usuario_Estado_Usuario" Member="Estado_Usuario" ThisKey="ID_USUARIO" OtherKey="ID_ESTADO_USUARIO" Type="Estado_Usuario" Cardinality="One" />
+      <Association Name="Usuario_Mensaje" Member="Mensaje" ThisKey="ID_USUARIO" OtherKey="id_usuario_para" Type="Mensaje" />
+      <Association Name="Usuario_Mensaje1" Member="Mensaje1" ThisKey="ID_USUARIO" OtherKey="id_usuario_de" Type="Mensaje" />
+      <Association Name="Tienda_Usuario" Member="Tienda" ThisKey="ID_TIENDA" OtherKey="ID_TIENDA" Type="Tienda" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Comuna" Member="Comuna">
+    <Type Name="Comuna">
+      <Column Name="ID_COMUNA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ID_REGION" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Comuna_Localidad" Member="Localidad" ThisKey="ID_COMUNA" OtherKey="ID_COMUNA" Type="Localidad" />
+      <Association Name="Region_Comuna" Member="Region" ThisKey="ID_REGION" OtherKey="ID_REGION" Type="Region" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Estado" Member="Estado">
+    <Type Name="Estado">
+      <Column Name="ID_ESTADO" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Estado_Codigo" Member="Codigo" ThisKey="ID_ESTADO" OtherKey="ID_ESTADO" Type="Codigo" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Estado_Mensaje" Member="Estado_Mensaje">
+    <Type Name="Estado_Mensaje">
+      <Column Name="id_estado_mensaje" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Estado_Mensaje_Mensaje" Member="Mensaje" ThisKey="id_estado_mensaje" OtherKey="id_estado" Type="Mensaje" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Estado_Noticia" Member="Estado_Noticia">
+    <Type Name="Estado_Noticia">
+      <Column Name="id_estado_noticia" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Estado_Noticia_Noticia" Member="Noticia" ThisKey="id_estado_noticia" OtherKey="ID_ESTADO" Type="Noticia" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ESTADO_PRENDA" Member="ESTADO_PRENDA">
+    <Type Name="ESTADO_PRENDA">
+      <Column Name="ID_ESTADO_PRENDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="ESTADO_PRENDA_Producto" Member="Producto" ThisKey="ID_ESTADO_PRENDA" OtherKey="ID_ESTADO" Type="Producto" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Estado_Tienda" Member="Estado_Tienda">
+    <Type Name="Estado_Tienda">
+      <Column Name="ID_ESTADO_TIENDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Estado_Tienda_Tienda" Member="Tienda" ThisKey="ID_ESTADO_TIENDA" OtherKey="ID_ESTADO" Type="Tienda" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Estado_Usuario" Member="Estado_Usuario">
+    <Type Name="Estado_Usuario">
+      <Column Name="ID_ESTADO_USUARIO" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Usuario_Estado_Usuario" Member="Usuario" ThisKey="ID_ESTADO_USUARIO" OtherKey="ID_USUARIO" Type="Usuario" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Imagen" Member="Imagen">
+    <Type Name="Imagen">
+      <Column Name="ID_IMAGEN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="URL" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="ID_TIPO_IMAGEN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_DUENO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_TIPO_DUENO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TIMESTAMP" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Imagen_Noticia" Member="Noticia" ThisKey="ID_IMAGEN" OtherKey="ID_IMAGEN" Type="Noticia" />
+      <Association Name="Tipo_Dueno_Imagen" Member="Tipo_Dueno" ThisKey="ID_TIPO_DUENO" OtherKey="ID_TIPO_DUENO" Type="Tipo_Dueno" IsForeignKey="true" />
+      <Association Name="Tipo_Imagen_Imagen" Member="Tipo_Imagen" ThisKey="ID_TIPO_IMAGEN" OtherKey="ID_TIPO_IMAGEN" Type="Tipo_Imagen" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Imagen_Producto" Member="Imagen_Producto">
+    <Type Name="Imagen_Producto">
+      <Column Name="ID_IMAGEN_PRODUCTO" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="URL" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="ID_PRODUCTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Producto_Imagen_Producto" Member="Producto" ThisKey="ID_PRODUCTO" OtherKey="ID_PRODUCTO" Type="Producto" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Localidad" Member="Localidad">
+    <Type Name="Localidad">
+      <Column Name="ID_LOCALIDAD" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="CALLE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NUMERO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ID_TIENDA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_COMUNA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Comuna_Localidad" Member="Comuna" ThisKey="ID_COMUNA" OtherKey="ID_COMUNA" Type="Comuna" IsForeignKey="true" />
+      <Association Name="Tienda_Localidad" Member="Tienda" ThisKey="ID_TIENDA" OtherKey="ID_TIENDA" Type="Tienda" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Mensaje" Member="Mensaje">
+    <Type Name="Mensaje">
+      <Column Name="id_mensaje" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="asunto" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="mensaje" Member="mensaje1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="fecha_envio" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="id_usuario_para" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_usuario_de" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_estado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Estado_Mensaje_Mensaje" Member="Estado_Mensaje" ThisKey="id_estado" OtherKey="id_estado_mensaje" Type="Estado_Mensaje" IsForeignKey="true" />
+      <Association Name="Usuario_Mensaje" Member="Usuario" ThisKey="id_usuario_para" OtherKey="ID_USUARIO" Type="Usuario" IsForeignKey="true" />
+      <Association Name="Usuario_Mensaje1" Member="Usuario1" ThisKey="id_usuario_de" OtherKey="ID_USUARIO" Type="Usuario" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Noticia" Member="Noticia">
+    <Type Name="Noticia">
+      <Column Name="ID_NOTICIA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DETALLE" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="URL" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ID_IMAGEN" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_TIENDA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_TIPO_NOTICIA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_ESTADO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Estado_Noticia_Noticia" Member="Estado_Noticia" ThisKey="ID_ESTADO" OtherKey="id_estado_noticia" Type="Estado_Noticia" IsForeignKey="true" />
+      <Association Name="Imagen_Noticia" Member="Imagen" ThisKey="ID_IMAGEN" OtherKey="ID_IMAGEN" Type="Imagen" IsForeignKey="true" />
+      <Association Name="Tienda_Noticia" Member="Tienda" ThisKey="ID_TIENDA" OtherKey="ID_TIENDA" Type="Tienda" IsForeignKey="true" />
+      <Association Name="Tipo_Noticia_Noticia" Member="Tipo_Noticia" ThisKey="ID_TIPO_NOTICIA" OtherKey="ID_TIPO_NOTICIA" Type="Tipo_Noticia" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Noticia_Tienda" Member="Noticia_Tienda">
+    <Type Name="Noticia_Tienda">
+      <Column Name="id_noticia" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="nombre" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Pais" Member="Pais">
+    <Type Name="Pais">
+      <Column Name="ID_PAIS" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Pais_Region" Member="Region" ThisKey="ID_PAIS" OtherKey="ID_PAIS" Type="Region" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Producto" Member="Producto">
+    <Type Name="Producto">
+      <Column Name="ID_PRODUCTO" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="VALOR" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="OCACION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TALLA" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CANTIDAD_PRENDAS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_TIENDA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_ESTADO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Producto_Imagen_Producto" Member="Imagen_Producto" ThisKey="ID_PRODUCTO" OtherKey="ID_PRODUCTO" Type="Imagen_Producto" />
+      <Association Name="Producto_Producto_Tag" Member="Producto_Tag" ThisKey="ID_PRODUCTO" OtherKey="id_producto" Type="Producto_Tag" />
+      <Association Name="ESTADO_PRENDA_Producto" Member="ESTADO_PRENDA" ThisKey="ID_ESTADO" OtherKey="ID_ESTADO_PRENDA" Type="ESTADO_PRENDA" IsForeignKey="true" />
+      <Association Name="Tienda_Producto" Member="Tienda" ThisKey="ID_TIENDA" OtherKey="ID_TIENDA" Type="Tienda" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Producto_Tag" Member="Producto_Tag">
+    <Type Name="Producto_Tag">
+      <Column Name="id_producto_tag" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="id_tag" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_producto" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Producto_Producto_Tag" Member="Producto" ThisKey="id_producto" OtherKey="ID_PRODUCTO" Type="Producto" IsForeignKey="true" />
+      <Association Name="TAGS_Producto_Tag" Member="TAGS" ThisKey="id_tag" OtherKey="ID_TAG" Type="TAGS" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Region" Member="Region">
+    <Type Name="Region">
+      <Column Name="ID_REGION" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ID_PAIS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Region_Comuna" Member="Comuna" ThisKey="ID_REGION" OtherKey="ID_REGION" Type="Comuna" />
+      <Association Name="Pais_Region" Member="Pais" ThisKey="ID_PAIS" OtherKey="ID_PAIS" Type="Pais" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TAGS" Member="TAGS">
+    <Type Name="TAGS">
+      <Column Name="ID_TAG" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="TAGS_Producto_Tag" Member="Producto_Tag" ThisKey="ID_TAG" OtherKey="id_tag" Type="Producto_Tag" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tienda" Member="Tienda">
+    <Type Name="Tienda">
+      <Column Name="ID_TIENDA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RESENA" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="FECHA_CREACION" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ID_ESTADO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="Tienda_Codigo" Member="Codigo" ThisKey="ID_TIENDA" OtherKey="ID_TIENDA" Type="Codigo" />
+      <Association Name="Tienda_Usuario" Member="Usuario" ThisKey="ID_TIENDA" OtherKey="ID_TIENDA" Type="Usuario" />
+      <Association Name="Tienda_Localidad" Member="Localidad" ThisKey="ID_TIENDA" OtherKey="ID_TIENDA" Type="Localidad" />
+      <Association Name="Tienda_Noticia" Member="Noticia" ThisKey="ID_TIENDA" OtherKey="ID_TIENDA" Type="Noticia" />
+      <Association Name="Tienda_Producto" Member="Producto" ThisKey="ID_TIENDA" OtherKey="ID_TIENDA" Type="Producto" />
+      <Association Name="Estado_Tienda_Tienda" Member="Estado_Tienda" ThisKey="ID_ESTADO" OtherKey="ID_ESTADO_TIENDA" Type="Estado_Tienda" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tipo_Dueno" Member="Tipo_Dueno">
+    <Type Name="Tipo_Dueno">
+      <Column Name="ID_TIPO_DUENO" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Tipo_Dueno_Imagen" Member="Imagen" ThisKey="ID_TIPO_DUENO" OtherKey="ID_TIPO_DUENO" Type="Imagen" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tipo_Imagen" Member="Tipo_Imagen">
+    <Type Name="Tipo_Imagen">
+      <Column Name="ID_TIPO_IMAGEN" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TIMESTAMP" Type="System.Data.Linq.Binary" DbType="rowversion" CanBeNull="true" IsVersion="true" />
+      <Association Name="Tipo_Imagen_Imagen" Member="Imagen" ThisKey="ID_TIPO_IMAGEN" OtherKey="ID_TIPO_IMAGEN" Type="Imagen" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tipo_Noticia" Member="Tipo_Noticia">
+    <Type Name="Tipo_Noticia">
+      <Column Name="ID_TIPO_NOTICIA" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="Tipo_Noticia_Noticia" Member="Noticia" ThisKey="ID_TIPO_NOTICIA" OtherKey="ID_TIPO_NOTICIA" Type="Noticia" />
+    </Type>
+  </Table>
+</Database>

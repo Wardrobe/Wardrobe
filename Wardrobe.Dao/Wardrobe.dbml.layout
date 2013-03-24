@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 14.25, 21.625" name="Wardrobe">
+  <DataContextMoniker Name="/WardrobeDataContext" />
+  <nestedChildShapes>
+    <classShape Id="94222dad-ba4f-40dc-a09a-180c5b951e69" absoluteBounds="6.25, 8.875, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/WardrobeDataContext/Codigo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ccff0b35-da6b-4546-8cd1-30765baddbe2" absoluteBounds="6.265, 9.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="176717ba-4159-4598-b4ad-5bbfc6fba62a" absoluteBounds="6.25, 16.5, 2, 2.5401025390625023">
+      <DataClassMoniker Name="/WardrobeDataContext/Usuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9b185002-2e35-4303-9fb5-8a8fcf707248" absoluteBounds="6.265, 16.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="69225a66-efc2-46d3-83c5-65780ec54d82" absoluteBounds="3.5, 6.125, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/WardrobeDataContext/Comuna" />
+      <nestedChildShapes>
+        <elementListCompartment Id="bcfc13ff-53f9-4a2f-a041-5bf257c410ca" absoluteBounds="3.515, 6.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="69ed1b00-7e36-477f-8ff2-6a6ea480d9de" absoluteBounds="3.5, 12.25, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/WardrobeDataContext/Estado" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c5cac16d-dd88-46a7-9351-66ee2b7b6733" absoluteBounds="3.515, 12.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fe88eacf-c227-45f0-ba87-d3b0c3a201cc" absoluteBounds="6.25, 20.125, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/WardrobeDataContext/Estado_Mensaje" />
+      <nestedChildShapes>
+        <elementListCompartment Id="98392d6e-e620-4d66-8ab9-1c20fcdaf0f8" absoluteBounds="6.265, 20.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ad21c188-362b-4c34-b653-0243f3ec4f2d" absoluteBounds="3.5, 14.25, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/WardrobeDataContext/Estado_Noticia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2182c61c-5888-4599-8340-5fa3afc89543" absoluteBounds="3.515, 14.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0c8330a3-3177-4b2c-bd72-b9c397637eb3" absoluteBounds="6.5, 3.25, 2, 1.193992513020834">
+      <DataClassMoniker Name="/WardrobeDataContext/ESTADO_PRENDA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8259fc8b-9059-4914-b083-3dd79f995c62" absoluteBounds="6.515, 3.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6b1adef8-2e12-475e-a4aa-c0b71425aa3b" absoluteBounds="0.75, 9.25, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/WardrobeDataContext/Estado_Tienda" />
+      <nestedChildShapes>
+        <elementListCompartment Id="fe5c1df5-c34a-4db3-882f-330d07ceb8fd" absoluteBounds="0.765, 9.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3cf0416a-54cb-4e0d-8185-7a53deb17bb7" absoluteBounds="9, 17.125, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/WardrobeDataContext/Estado_Usuario" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1632fa19-ec96-4cd9-96a7-2caee1069c16" absoluteBounds="9.015, 17.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a2301e5b-9372-41fa-b59e-ce06e313b938" absoluteBounds="3.5, 18.75, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/WardrobeDataContext/Imagen" />
+      <nestedChildShapes>
+        <elementListCompartment Id="07e5898e-bdf1-4a58-921e-b880b2a6420f" absoluteBounds="3.515, 19.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ab7720eb-99cc-47dc-baa4-727ad6da6f24" absoluteBounds="12, 9.125, 2, 1.3862939453124987">
+      <DataClassMoniker Name="/WardrobeDataContext/Imagen_Producto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e21878cf-1671-4bf1-8870-5bd4a97a2c57" absoluteBounds="12.015, 9.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9fcb47d6-245c-441f-8a62-6072b8d7ef24" absoluteBounds="6.25, 5.875, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/WardrobeDataContext/Localidad" />
+      <nestedChildShapes>
+        <elementListCompartment Id="305dcfeb-3855-4d92-814d-6806a363fcbf" absoluteBounds="6.265, 6.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a6f9d9e5-354e-44e2-960e-6f6c0520d429" absoluteBounds="9, 13.625, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/WardrobeDataContext/Mensaje" />
+      <nestedChildShapes>
+        <elementListCompartment Id="87dca052-5728-4263-91a2-dda4170feabb" absoluteBounds="9.015, 14.085, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="60a9d6ba-3b5e-47c6-844e-e4dcf1f1b7ea" absoluteBounds="6.25, 11.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/WardrobeDataContext/Noticia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0cabb6ae-e49b-4d3f-9e3c-dcd4525a38c1" absoluteBounds="6.265, 12.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fb576216-7505-4c32-8a83-ae0fe679f25e" absoluteBounds="0.75, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/WardrobeDataContext/Noticia_Tienda" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7b3d84cf-6f4c-42b6-abe5-d4a1c8468935" absoluteBounds="0.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="265eeb28-6b71-4f93-8708-62a4cecadbac" absoluteBounds="1.5, 3.25, 2, 1.193992513020834">
+      <DataClassMoniker Name="/WardrobeDataContext/Pais" />
+      <nestedChildShapes>
+        <elementListCompartment Id="59a94fb8-3816-478b-be51-ecad2571fc09" absoluteBounds="1.5150000000000001, 3.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="43e06c34-2394-4272-8ff7-cf8c49503e80" absoluteBounds="9.25, 8.5, 2, 2.5401025390624987">
+      <DataClassMoniker Name="/WardrobeDataContext/Producto" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f9377ab0-c47c-4368-8930-ab11db45f527" absoluteBounds="9.265, 8.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="463f9eb8-a944-4b4a-9a60-982a0c6df5e5" absoluteBounds="12, 6.125, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/WardrobeDataContext/Producto_Tag" />
+      <nestedChildShapes>
+        <elementListCompartment Id="609e73d8-bfcb-4ad5-9601-f7d009dbff67" absoluteBounds="12.015, 6.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9e333ccb-ea74-4f07-87de-0d0e52c8af9b" absoluteBounds="0.75, 6.125, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/WardrobeDataContext/Region" />
+      <nestedChildShapes>
+        <elementListCompartment Id="48487313-b415-4ef0-b1bd-dd346c120c29" absoluteBounds="0.765, 6.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="357b6102-013e-419a-b716-d2870b1d90f8" absoluteBounds="9.25, 6.25, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/WardrobeDataContext/TAGS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="568221b3-8c8b-4f85-959e-d0324fe46402" absoluteBounds="9.265, 6.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="305a2014-250e-4d48-bfcc-6127b734186e" absoluteBounds="3.5, 8.875, 2, 1.7708968098958344">
+      <DataClassMoniker Name="/WardrobeDataContext/Tienda" />
+      <nestedChildShapes>
+        <elementListCompartment Id="17ea1372-a99b-4685-bc91-3e97b27c9c16" absoluteBounds="3.515, 9.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="952b4922-818d-471f-840d-d4907a43c2ce" absoluteBounds="0.75, 18.125, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/WardrobeDataContext/Tipo_Dueno" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ab4c8c04-f03f-4c9e-8477-7b5ed560e887" absoluteBounds="0.765, 18.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="969a3a62-58e4-47bb-a44f-c4bfd2592291" absoluteBounds="0.75, 20, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/WardrobeDataContext/Tipo_Imagen" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b83a20ff-f502-4b23-9f3a-4a800e06a1c0" absoluteBounds="0.765, 20.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6cac5c27-8aca-4b73-b28a-bc6ef22fbe8c" absoluteBounds="3.5, 16.125, 2, 1.1939925130208309">
+      <DataClassMoniker Name="/WardrobeDataContext/Tipo_Noticia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d9b93f6d-2ec8-491b-826a-d8b925ff26a2" absoluteBounds="3.515, 16.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(5.5 : 12.25); (5.875 : 11.875); (5.875 : 9.76044840494792); (6.25 : 9.76044840494792)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WardrobeDataContext/Estado/Estado_Codigo" />
+      <nodes>
+        <classShapeMoniker Id="69ed1b00-7e36-477f-8ff2-6a6ea480d9de" />
+        <classShapeMoniker Id="94222dad-ba4f-40dc-a09a-180c5b951e69" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 17.7219962565104); (8.54166666666667 : 17.7219962565104 : JumpStart); (8.70833333333333 : 17.7219962565104 : JumpEnd); (9 : 17.7219962565104)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WardrobeDataContext/Usuario/Usuario_Estado_Usuario" />
+      <nodes>
+        <classShapeMoniker Id="176717ba-4159-4598-b4ad-5bbfc6fba62a" />
+        <classShapeMoniker Id="3cf0416a-54cb-4e0d-8185-7a53deb17bb7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.81814697265625); (5.79166666666667 : 6.81814697265625 : JumpStart); (5.95833333333333 : 6.81814697265625 : JumpEnd); (6.25 : 6.81814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WardrobeDataContext/Comuna/Comuna_Localidad" />
+      <nodes>
+        <classShapeMoniker Id="69225a66-efc2-46d3-83c5-65780ec54d82" />
+        <classShapeMoniker Id="9fcb47d6-245c-441f-8a62-6072b8d7ef24" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 20.125); (8.625 : 19.75); (8.625 : 14.7027498372396); (9 : 14.7027498372396)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WardrobeDataContext/Estado_Mensaje/Estado_Mensaje_Mensaje" />
+      <nodes>
+        <classShapeMoniker Id="fe88eacf-c227-45f0-ba87-d3b0c3a201cc" />
+        <classShapeMoniker Id="a6f9d9e5-354e-44e2-960e-6f6c0520d429" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 16.5338451538462); (8.56607443490112 : 16.217770718945 : JumpStart); (8.68392556509888 : 16.0999195887473 : JumpEnd); (8.875 : 15.9088451538462); (8.875 : 15.2728767558594); (9 : 15.2728767558594)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WardrobeDataContext/Usuario/Usuario_Mensaje" />
+      <nodes>
+        <classShapeMoniker Id="176717ba-4159-4598-b4ad-5bbfc6fba62a" />
+        <classShapeMoniker Id="a6f9d9e5-354e-44e2-960e-6f6c0520d429" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 16.5292297692308); (8.56607443490112 : 16.2131553343296 : JumpStart); (8.68392556509888 : 16.0953042041319 : JumpEnd); (8.8125 : 15.9667297692308); (8.8125 : 15.2728767558594); (9 : 15.2728767558594)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WardrobeDataContext/Usuario/Usuario_Mensaje1" />
+      <nodes>
+        <classShapeMoniker Id="176717ba-4159-4598-b4ad-5bbfc6fba62a" />
+        <classShapeMoniker Id="a6f9d9e5-354e-44e2-960e-6f6c0520d429" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 14.8469962565104); (5.79166666666667 : 14.8469962565104 : JumpStart); (6.14583333333333 : 14.8469962565104 : JumpEnd); (7.25 : 14.8469962565104); (7.25 : 13.9054996744792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WardrobeDataContext/Estado_Noticia/Estado_Noticia_Noticia" />
+      <nodes>
+        <classShapeMoniker Id="ad21c188-362b-4c34-b653-0243f3ec4f2d" />
+        <classShapeMoniker Id="60a9d6ba-3b5e-47c6-844e-e4dcf1f1b7ea" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 18.751509152494); (5.875 : 18.376509152494); (5.875 : 12.8277498372396); (5.97916666666667 : 12.8277498372396 : JumpStart); (6.14583333333333 : 12.8277498372396 : JumpEnd); (6.25 : 12.8277498372396)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WardrobeDataContext/Imagen/Imagen_Noticia" />
+      <nodes>
+        <classShapeMoniker Id="a2301e5b-9372-41fa-b59e-ce06e313b938" />
+        <classShapeMoniker Id="60a9d6ba-3b5e-47c6-844e-e4dcf1f1b7ea" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 9.81814697265625); (12 : 9.81814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WardrobeDataContext/Producto/Producto_Imagen_Producto" />
+      <nodes>
+        <classShapeMoniker Id="43e06c34-2394-4272-8ff7-cf8c49503e80" />
+        <classShapeMoniker Id="ab7720eb-99cc-47dc-baa4-727ad6da6f24" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.40625 : 4.44399251302083); (8.40625 : 10.8742496744792); (9.25 : 10.8742496744792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WardrobeDataContext/ESTADO_PRENDA/ESTADO_PRENDA_Producto" />
+      <nodes>
+        <classShapeMoniker Id="0c8330a3-3177-4b2c-bd72-b9c397637eb3" />
+        <classShapeMoniker Id="43e06c34-2394-4272-8ff7-cf8c49503e80" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 8.5); (11.625 : 8.125); (11.625 : 6.81814697265625); (12 : 6.81814697265625)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WardrobeDataContext/Producto/Producto_Producto_Tag" />
+      <nodes>
+        <classShapeMoniker Id="43e06c34-2394-4272-8ff7-cf8c49503e80" />
+        <classShapeMoniker Id="463f9eb8-a944-4b4a-9a60-982a0c6df5e5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.81814697265625); (3.5 : 6.81814697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WardrobeDataContext/Region/Region_Comuna" />
+      <nodes>
+        <classShapeMoniker Id="9e333ccb-ea74-4f07-87de-0d0e52c8af9b" />
+        <classShapeMoniker Id="69225a66-efc2-46d3-83c5-65780ec54d82" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.125 : 4.44399251302083); (2.125 : 6.125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WardrobeDataContext/Pais/Pais_Region" />
+      <nodes>
+        <classShapeMoniker Id="265eeb28-6b71-4f93-8708-62a4cecadbac" />
+        <classShapeMoniker Id="9e333ccb-ea74-4f07-87de-0d0e52c8af9b" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11.25 : 7.19356974283854); (11.5416666666667 : 7.19356974283854 : JumpStart); (11.7083333333333 : 7.19356974283854 : JumpEnd); (12 : 7.19356974283854)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WardrobeDataContext/TAGS/TAGS_Producto_Tag" />
+      <nodes>
+        <classShapeMoniker Id="357b6102-013e-419a-b716-d2870b1d90f8" />
+        <classShapeMoniker Id="463f9eb8-a944-4b4a-9a60-982a0c6df5e5" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 9.25522420247396); (6.25 : 9.25522420247396)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WardrobeDataContext/Tienda/Tienda_Codigo" />
+      <nodes>
+        <classShapeMoniker Id="305a2014-250e-4d48-bfcc-6127b734186e" />
+        <classShapeMoniker Id="94222dad-ba4f-40dc-a09a-180c5b951e69" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.47139320537861 : 10.6458968098958); (5.81607443490112 : 10.9905780394183 : JumpStart); (6.02767556509888 : 11.2021791696161 : JumpEnd); (6.0625 : 11.2370036045172); (6.0625 : 17.7700512695313); (6.25 : 17.7700512695313)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WardrobeDataContext/Tienda/Tienda_Usuario" />
+      <nodes>
+        <classShapeMoniker Id="305a2014-250e-4d48-bfcc-6127b734186e" />
+        <classShapeMoniker Id="176717ba-4159-4598-b4ad-5bbfc6fba62a" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 8.87636122831531); (5.875 : 8.50136122831531); (5.875 : 6.31532148632813); (6.25 : 6.31532148632813)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WardrobeDataContext/Tienda/Tienda_Localidad" />
+      <nodes>
+        <classShapeMoniker Id="305a2014-250e-4d48-bfcc-6127b734186e" />
+        <classShapeMoniker Id="9fcb47d6-245c-441f-8a62-6072b8d7ef24" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 10.5859577640224); (5.81607443490112 : 10.9020321989236 : JumpStart); (5.93392556509888 : 11.0198833291213 : JumpEnd); (5.96875 : 11.0547077640224); (5.96875 : 12.2576229186198); (5.97916666666667 : 12.2576229186198 : JumpStart); (6.14583333333333 : 12.2576229186198 : JumpEnd); (6.25 : 12.2576229186198)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WardrobeDataContext/Tienda/Tienda_Noticia" />
+      <nodes>
+        <classShapeMoniker Id="305a2014-250e-4d48-bfcc-6127b734186e" />
+        <classShapeMoniker Id="60a9d6ba-3b5e-47c6-844e-e4dcf1f1b7ea" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(4.4544441026893 : 10.6458968098958); (4.4544441026893 : 10.9884286067708); (5.73059166892027 : 10.9884286067708 : JumpStart); (5.98580417608173 : 10.9884286067708 : JumpEnd); (9.25 : 10.9884286067708)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WardrobeDataContext/Tienda/Tienda_Producto" />
+      <nodes>
+        <classShapeMoniker Id="305a2014-250e-4d48-bfcc-6127b734186e" />
+        <classShapeMoniker Id="43e06c34-2394-4272-8ff7-cf8c49503e80" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 9.84699625651042); (3.5 : 9.84699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WardrobeDataContext/Estado_Tienda/Estado_Tienda_Tienda" />
+      <nodes>
+        <classShapeMoniker Id="6b1adef8-2e12-475e-a4aa-c0b71425aa3b" />
+        <classShapeMoniker Id="305a2014-250e-4d48-bfcc-6127b734186e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 19.0344962565104); (3.5 : 19.0344962565104)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WardrobeDataContext/Tipo_Dueno/Tipo_Dueno_Imagen" />
+      <nodes>
+        <classShapeMoniker Id="952b4922-818d-471f-840d-d4907a43c2ce" />
+        <classShapeMoniker Id="a2301e5b-9372-41fa-b59e-ce06e313b938" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 20.3565991210938); (3.5 : 20.3565991210938)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WardrobeDataContext/Tipo_Imagen/Tipo_Imagen_Imagen" />
+      <nodes>
+        <classShapeMoniker Id="969a3a62-58e4-47bb-a44f-c4bfd2592291" />
+        <classShapeMoniker Id="a2301e5b-9372-41fa-b59e-ce06e313b938" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 16.1562264964944); (5.81607443490112 : 15.8401520615933 : JumpStart); (5.93392556509888 : 15.7223009313955 : JumpEnd); (5.96875 : 15.6874764964944); (5.96875 : 13.3978767558594); (5.97916666666667 : 13.3978767558594 : JumpStart); (6.14583333333333 : 13.3978767558594 : JumpEnd); (6.25 : 13.3978767558594)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/WardrobeDataContext/Tipo_Noticia/Tipo_Noticia_Noticia" />
+      <nodes>
+        <classShapeMoniker Id="6cac5c27-8aca-4b73-b28a-bc6ef22fbe8c" />
+        <classShapeMoniker Id="60a9d6ba-3b5e-47c6-844e-e4dcf1f1b7ea" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
